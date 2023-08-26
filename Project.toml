@@ -1,0 +1,20 @@
+name = "МояУпоротаяГостевая"
+uuid = "ee71ce5b-9c3c-4999-b21b-4e09cbed8826"
+authors = ["Alex(cruella) <alex3.145@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+DecFP = "55939f99-70c6-5e9b-8bb0-5071ed7d61fd"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+MySQL = "39abe10b-433b-5dbd-92d4-e302a9df00cd"
+Oxygen = "df9a0d86-3283-4920-82dc-4555fc0d1d8b"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+PrecompileTools = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
+Preferences = "21216c6a-2e73-6563-6e65-726566657250"
+StructTypes = "856f2bd8-1eba-4b0a-8007-ebc267875bd4"
+SwaggerMarkdown = "1b6eb727-ad4b-44eb-9669-b9596a6e760f"
+UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+
+[extras]
+MyGbSettings = "16e4e860-d6b8-5056-a518-93e88b6392ae"

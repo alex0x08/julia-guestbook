@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Alex Chernyshev">
+    <meta name="generator" content="hands">
+    <title>0x08 Серьезные эксперименты: Julia </title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
+    <link href="/static/lit.css" rel="stylesheet"/>
+    <!-- чтобы был футер внизу страницы -->
+    <style>
+        #content{min-height: calc(100vh - 200px);}
+    </style>
+</head>
+<body class="c">
+<div class="row" >
+    <b class="col">
+        <h4>Упоротая гостевая</h4>
+    </b>
+    <div class="col"  style="float:right;">
+            <a class="btn"
+                href="https://teletype.in/@alex0x08">0x08</a>
+        
+    </div>
+</div>
+    <div id="content" class="row">
+        <p class="lead">
+            Добро пожаловать в мою упоротую гостевую!
+        </p>
+        <!-- форма для добавления новой записи в гостевую -->
+        <form id="newRecordForm" >
+            <div class="row">
+                <div class="col" id="errorAlert" style="display:none;">
+                    <span style="color:red;">Какая-то ошибка</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="6 col">
+                    <label for="authorInput">Автор</label>
+                    <input type="email" class="card w-100" id="authorInput" placeholder="Ваше имя"/>
+                </div>
+                <div class="6 col">
+                    <label for="titleInput">Заголовок</label>
+                    <input type="text" class="card w-100" id="titleInput" placeholder="Текст заголовка"/>
+                </div>
+            </div>
+            <div class="row">
+                <label for="messageInput">Сообщение</label>
+                <textarea class="card w-100" id="messageInput" rows="3" placeholder="Текст сообщения"></textarea>
+            </div>
+            <div class="row">
+                <button id="submitBtn" type="submit" class="btn primary">Отправить</button>
+            </div>
+        </form>       
+        <!-- корневой элемент, к которому будет добавлены записи -->
+        <div id="messages" class="row"></div>
+    </div>
+    <div class="row">
+        <p>
+            Created by <a href="mailto:alex3.145@gmail.com">Alex Chernyshev</a> as part of my 'Serious Experiments' Project.
+        </p>
+    </div>
+    <!-- скрытый блок, шаблон для записи -->
+<div id="message-template" class="card row" style="display:none;">
+    <h4>
+        <span id="message-title">[title]</span>
+    </h4>
+    <p>
+        От:
+        <span id="message-author">[author]</span>
+        Дата:
+        <span id="message-date">[date]</span>
+    </p>
+    <p id="message-text">[text]</p>
+    <div style="float:right;">
+        <a href="#" id="deleteBtn"
+           class="btn primary"
+           confirm="Правда удалить?">
+            Удалить
+        </a>
+        
+    </div>
+</div>
+<script src="/static/gb.js"></script>
+</body>
+</html>
